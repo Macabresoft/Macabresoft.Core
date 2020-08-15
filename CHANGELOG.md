@@ -1,12 +1,10 @@
 # Change Log
 
-## 1.1.0.0
+## 1.0.2.0
 
 ### Features
 
-### Refactors
-
-### Fixes
+* Support for .NET Standard 2.1 added.
 
 ---
 
