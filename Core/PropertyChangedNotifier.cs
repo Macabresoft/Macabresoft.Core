@@ -6,7 +6,7 @@
     /// <summary>
     /// A base class that implements <see cref="INotifyPropertyChanged" />
     /// </summary>
-    public class NotifyPropertyChanged : INotifyPropertyChanged {
+    public class PropertyChangedNotifier : INotifyPropertyChanged {
 
         /// <summary>
         /// Occurs when a property changes.
