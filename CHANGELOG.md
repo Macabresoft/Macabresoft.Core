@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.0.3.0
+
+* Support for .NET Standard expanded to 2.0.
+
+---
+
 ## 1.0.2.0
 
 ### Features
