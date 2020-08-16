@@ -2,6 +2,8 @@
 
 ## 1.0.3.0
 
+### Refactors
+
 * Support for .NET Standard expanded to 2.0.
 
 ---
