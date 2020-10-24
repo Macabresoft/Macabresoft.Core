@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.0.4.0
+
+* Created a PathHelper that assists in navigating to ancestor directories.
+
 ## 1.0.3.0
 
 ### Refactors
