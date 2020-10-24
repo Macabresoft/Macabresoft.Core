@@ -2,6 +2,8 @@
 
 ## 1.0.4.0
 
+### Features
+
 * Created a PathHelper that assists in navigating to ancestor directories.
 
 ## 1.0.3.0
