@@ -1,4 +1,4 @@
-﻿namespace Macabresoft.Core.Utilities {
+﻿namespace Macabresoft.Core {
     using System.Diagnostics;
     using System.Runtime.InteropServices;
 
