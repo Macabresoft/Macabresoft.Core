@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.0.5.0
+
+### Features
+
+* Created a WebHelper that can open URLs in a browser across desktop platforms.
+
 ## 1.0.4.0
 
 ### Features
