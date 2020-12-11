@@ -1,10 +1,16 @@
 # Change Log
 
+## 1.0.7.0
+
+---
+
 ## 1.0.6.0
 
 ### Features
 
 * Object and Type extensions that allow generic access to members as well as the ability to change those members.
+
+---
 
 ## 1.0.5.0
 
@@ -12,11 +18,15 @@
 
 * Created a WebHelper that can open URLs in a browser across desktop platforms.
 
+---
+
 ## 1.0.4.0
 
 ### Features
 
 * Created a PathHelper that assists in navigating to ancestor directories.
+
+---
 
 ## 1.0.3.0
 
