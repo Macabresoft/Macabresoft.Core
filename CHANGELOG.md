@@ -2,6 +2,11 @@
 
 ## 1.0.7.0
 
+### Features
+
+* ObservableCollectionExtended added. Provides additional functionality to observable collections.
+
+
 ---
 
 ## 1.0.6.0
