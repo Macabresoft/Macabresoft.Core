@@ -1,11 +1,14 @@
 # Change Log
 
+## 1.0.8.0
+
+---
+
 ## 1.0.7.0
 
 ### Features
 
 * ObservableCollectionExtended added. Provides additional functionality to observable collections.
-
 
 ---
 
