@@ -4,7 +4,7 @@
 
 ### Features
 
-* DisplayNameHelper can retrieve the display name of types and enums.
+* DisplayNameHelper can retrieve the display name of types, properties, and enums.
 
 ---
 
