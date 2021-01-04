@@ -2,6 +2,10 @@
 
 ## 1.0.8.0
 
+### Features
+
+* DisplayNameHelper can retrieve the display name of types and enums.
+
 ---
 
 ## 1.0.7.0
