@@ -18,7 +18,7 @@
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="ResettableLazy" /> class.
+        /// Initializes a new instance of the <see cref="ResettableLazy{T}" /> class.
         /// </summary>
         /// <param name="valueFactory">The value factory.</param>
         public ResettableLazy(Func<T> valueFactory) {

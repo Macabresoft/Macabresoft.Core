@@ -6,6 +6,10 @@
 
 * RollingMeanFloat can have all of its values cleared using Clear().
 
+### Refactors
+
+* NuGet package upgrades.
+
 ## 1.0.8.0
 
 ### Features
