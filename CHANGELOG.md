@@ -1,5 +1,13 @@
 # Change Log
 
+## 1.0.10.0
+
+### Features
+
+### Refactors
+
+### Bug Fixes
+
 ## 1.0.9.0
 
 ### Features
