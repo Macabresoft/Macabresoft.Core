@@ -1,5 +1,4 @@
 ﻿namespace Macabresoft.Core {
-
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -9,7 +8,7 @@
     /// </summary>
     public sealed class RollingMeanFloat {
         private readonly int _size;
-        private readonly List<float> _values = new List<float>();
+        private readonly List<float> _values = new();
 
         /// <summary>
         /// Initializes a new instance of the <see cref="RollingMeanFloat" /> class.
@@ -41,6 +40,14 @@
             }
 
             this.CalculateAverageFrequency();
+        }
+
+        /// <summary>
+        /// Clears the list of values being averaged and sets the mean value back to 0.
+        /// </summary>
+        public void Clear() {
+            this._values.Clear();
+            this.MeanValue = 0f;
         }
 
         /// <summary>

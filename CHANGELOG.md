@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.0.9.0
+
+### Features
+
+* RollingMeanFloat can have all of its values cleared using Clear().
+
 ## 1.0.8.0
 
 ### Features

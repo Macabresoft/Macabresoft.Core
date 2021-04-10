@@ -9,6 +9,7 @@ namespace Macabresoft.Core.Tests.Utilities {
         private const string ClassName = "All These Governors";
         private const string Property1Name = "The Hero of Kvatch!";
         private const string Property2Name = "Tarhiel";
+        
         [Test]
         [Category("Unit Tests")]
         public static void GetEnumDisplayName_Should_UseDisplayAttribute() {
@@ -43,6 +44,7 @@ namespace Macabresoft.Core.Tests.Utilities {
         [Display(Name = ClassName)]
         private class DisplayNameTestClass {
             [Display(Name = Property1Name)]
+            // ReSharper disable once UnassignedGetOnlyAutoProperty
             public float Property1 { get; }
             
             [Display(Name = Property2Name)]
