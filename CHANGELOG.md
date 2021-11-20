@@ -4,9 +4,12 @@
 
 ### Features
 
+* InsertOrAdd(...) extension method added for IList<T>.
+
 ### Refactors
 
-### Bug Fixes
+* NuGet package upgrades.
+* Updated to .NET 6.
 
 ## 1.0.9.0
 

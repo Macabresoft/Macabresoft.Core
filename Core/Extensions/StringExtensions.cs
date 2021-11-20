@@ -16,7 +16,7 @@
         /// <param name="stringComparisonType">Type of the string comparison.</param>
         /// <returns><c>true</c> if the text contains the specified value; otherwise, <c>false</c>.</returns>
         public static bool Contains(this string text, string value, StringComparison stringComparisonType) {
-            return text.IndexOf(value, stringComparisonType) >= 0;
+            return text.Contains(value, stringComparisonType);
         }
 
         /// <summary>
@@ -25,11 +25,7 @@
         /// <param name="value">The value.</param>
         /// <returns>The file safe string.</returns>
         public static string ToSafeString(this string value) {
-            if (value != null) {
-                return new string(value.Where(x => char.IsLetterOrDigit(x)).ToArray());
-            }
-
-            return string.Empty;
+            return value != null ? new string(value.Where(char.IsLetterOrDigit).ToArray()) : string.Empty;
         }
     }
 }

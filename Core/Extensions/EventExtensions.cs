@@ -13,6 +13,7 @@
         /// <param name="handler">The handler.</param>
         /// <param name="sender">The sender.</param>
         public static void SafeInvoke(this EventHandler handler, object sender) {
+            // ReSharper disable once AssignNullToNotNullAttribute
             handler?.Invoke(sender, null);
         }
 

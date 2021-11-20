@@ -14,11 +14,7 @@
         /// <param name="func">The function.</param>
         /// <returns></returns>
         public static T SafeInvoke<T>(this Func<T> func) {
-            if (func != null) {
-                return func();
-            }
-
-            return default(T);
+            return func != null ? func() : default;
         }
     }
 }

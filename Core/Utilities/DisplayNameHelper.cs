@@ -18,7 +18,6 @@ namespace Macabresoft.Core {
 
             if (value.GetType().GetField(value.ToString()) is FieldInfo fieldInfo) {
                 var attribute = fieldInfo.GetCustomAttributes(typeof(DisplayAttribute), false).OfType<DisplayAttribute>().FirstOrDefault();
-                ;
                 result = attribute != null ? attribute.Name : value.ToString();
             }
 

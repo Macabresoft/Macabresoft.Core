@@ -13,14 +13,14 @@
         public const float TwoPi = (float)Math.PI * 2f;
 
         /// <summary>
-        /// Clamps a <see cref="ushort" /> betweem a minimum and maximum value.
+        /// Clamps a <see cref="ushort" /> between a minimum and maximum value.
         /// </summary>
         /// <param name="value">The value.</param>
-        /// <param name="minumum">The minumum.</param>
+        /// <param name="minimum">The minimum.</param>
         /// <param name="maximum">The maximum.</param>
         /// <returns>The clamped value.</returns>
-        public static ushort Clamp(this ushort value, ushort minumum, ushort maximum) {
-            return Math.Max(minumum, Math.Min(maximum, value));
+        public static ushort Clamp(this ushort value, ushort minimum, ushort maximum) {
+            return Math.Max(minimum, Math.Min(maximum, value));
         }
 
         /// <summary>

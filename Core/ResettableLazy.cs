@@ -14,7 +14,7 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="ResettableLazy{T}" /> class.
         /// </summary>
-        public ResettableLazy() : this(new Func<T>(() => default)) {
+        public ResettableLazy() : this(() => default) {
         }
 
         /// <summary>
