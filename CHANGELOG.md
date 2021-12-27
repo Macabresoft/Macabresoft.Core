@@ -4,11 +4,11 @@
 
 ### Features
 
-* Targets .NET Standard 2.0
+* Targets .NET Standard 2.0.
 
 ### Refactors
 
-### Bug Fixes
+* Code cleanup.
 
 ## 1.0.10.0
 

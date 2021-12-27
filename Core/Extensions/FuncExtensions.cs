@@ -1,20 +1,18 @@
-﻿namespace Macabresoft.Core {
+﻿namespace Macabresoft.Core;
 
-    using System;
+using System;
 
+/// <summary>
+/// Extensions for <see cref="Func{TResult}" /> .
+/// </summary>
+public static class FuncExtensions {
     /// <summary>
-    /// Extensions for <see cref="Func{TResult}" /> .
+    /// Safes the invoke.
     /// </summary>
-    public static class FuncExtensions {
-
-        /// <summary>
-        /// Safes the invoke.
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="func">The function.</param>
-        /// <returns></returns>
-        public static T SafeInvoke<T>(this Func<T> func) {
-            return func != null ? func() : default;
-        }
+    /// <typeparam name="T"></typeparam>
+    /// <param name="func">The function.</param>
+    /// <returns></returns>
+    public static T SafeInvoke<T>(this Func<T> func) {
+        return func != null ? func() : default;
     }
 }
