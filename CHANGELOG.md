@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.0.12.0
+
+### Refactors
+
+* Overriding package with release builds instead of debug.
+
 ## 1.0.11.0
 
 ### Features
