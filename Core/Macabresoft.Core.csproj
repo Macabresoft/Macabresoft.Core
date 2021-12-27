@@ -15,14 +15,13 @@
         <Company>Macabresoft</Company>
         <Authors>Macabresoft, Brett Story</Authors>
         <PackageVersion>1.0.11</PackageVersion>
-        <TargetFramework>net6.0</TargetFramework>
         <LangVersion>default</LangVersion>
+        <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
     </PropertyGroup>
 
     <ItemGroup>
         <None Include="..\icon.png">
             <Pack>True</Pack>
-            <PackagePath></PackagePath>
         </None>
     </ItemGroup>
 </Project>

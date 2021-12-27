@@ -4,6 +4,8 @@
 
 ### Features
 
+* Targets .NET Standard 2.0
+
 ### Refactors
 
 ### Bug Fixes

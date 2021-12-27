@@ -1,4 +1,5 @@
 namespace Macabresoft.Core {
+    #if NET6_0
     using System;
     using System.ComponentModel.DataAnnotations;
     using System.Linq;
@@ -61,4 +62,6 @@ namespace Macabresoft.Core {
             return result;
         }
     }
+    
+    #endif
 }
