@@ -1,23 +1,27 @@
 ﻿namespace Macabresoft.Core;
 
+using System;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 /// <summary>
 /// A base class that implements <see cref="INotifyPropertyChanged" />
 /// </summary>
-public class PropertyChangedNotifier : INotifyPropertyChanged {
+public class PropertyChangedNotifier : INotifyPropertyChanged, IDisposable {
+    private bool _isDisposed;
+
     /// <summary>
     /// Occurs when a property changes.
     /// </summary>
     public event PropertyChangedEventHandler PropertyChanged;
 
-    /// <summary>
-    /// Raises the property changed event.
-    /// </summary>
-    /// <param name="propertyName">Name of the property.</param>
-    public void RaisePropertyChanged([CallerMemberName] string propertyName = "") {
-        this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    /// <inheritdoc />
+    public void Dispose() {
+        if (!this._isDisposed) {
+            this.OnDisposing();
+            this._isDisposed = true;
+            GC.SuppressFinalize(this);
+        }
     }
 
     /// <summary>
@@ -25,6 +29,30 @@ public class PropertyChangedNotifier : INotifyPropertyChanged {
     /// </summary>
     protected void DisposePropertyChanged() {
         this.PropertyChanged = null;
+    }
+
+    /// <summary>
+    /// Called when this <see cref="IDisposable" /> is being disposed.
+    /// </summary>
+    protected virtual void OnDisposing() {
+        this.DisposePropertyChanged();
+    }
+
+    /// <summary>
+    /// Raises the property changed event.
+    /// </summary>
+    /// <param name="sender">The sender.</param>
+    /// <param name="args">The arguments.</param>
+    protected void RaisePropertyChanged(object? sender, PropertyChangedEventArgs args) {
+        this.PropertyChanged?.Invoke(sender, args);
+    }
+
+    /// <summary>
+    /// Raises the property changed event.
+    /// </summary>
+    /// <param name="propertyName">Name of the property.</param>
+    protected void RaisePropertyChanged([CallerMemberName] string propertyName = "") {
+        this.PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 
     /// <summary>
