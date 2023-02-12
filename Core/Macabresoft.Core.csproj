@@ -10,11 +10,11 @@
         <RepositoryType>git</RepositoryType>
         <PackageIcon>icon.png</PackageIcon>
         <Version>1.0.13</Version>
-        <AssemblyVersion>1.0.13.0</AssemblyVersion>
-        <FileVersion>1.0.13.0</FileVersion>
+        <AssemblyVersion>1.0.14.0</AssemblyVersion>
+        <FileVersion>1.0.14.0</FileVersion>
         <Company>Macabresoft</Company>
         <Authors>Macabresoft, Brett Story</Authors>
-        <PackageVersion>1.0.13</PackageVersion>
+        <PackageVersion>1.0.14</PackageVersion>
         <LangVersion>default</LangVersion>
         <TargetFrameworks>net6.0;netstandard2.0</TargetFrameworks>
     </PropertyGroup>
