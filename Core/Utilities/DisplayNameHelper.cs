@@ -1,11 +1,8 @@
-#if NET6_0
-
 namespace Macabresoft.Core;
 
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Reflection;
 
 /// <summary>
 /// Helper class that uses the <see cref="DisplayAttribute" /> to get display names.
@@ -19,7 +16,7 @@ public static class DisplayNameHelper {
     public static string GetEnumDisplayName(this Enum value) {
         var result = string.Empty;
 
-        if (value.GetType().GetField(value.ToString()) is FieldInfo fieldInfo) {
+        if (value.GetType().GetField(value.ToString()) is { } fieldInfo) {
             var attribute = fieldInfo.GetCustomAttributes(typeof(DisplayAttribute), false).OfType<DisplayAttribute>().FirstOrDefault();
             result = attribute != null ? attribute.Name : value.ToString();
         }
@@ -36,8 +33,8 @@ public static class DisplayNameHelper {
     public static string GetPropertyDisplayName(this Type owningType, string propertyName) {
         var result = string.Empty;
         if (owningType != null && !string.IsNullOrEmpty(propertyName)) {
-            if (owningType.GetProperty(propertyName) is PropertyInfo propertyInfo &&
-                propertyInfo.GetCustomAttributes(typeof(DisplayAttribute), false).OfType<DisplayAttribute>().FirstOrDefault() is DisplayAttribute attribute) {
+            if (owningType.GetProperty(propertyName) is { } propertyInfo &&
+                propertyInfo.GetCustomAttributes(typeof(DisplayAttribute), false).OfType<DisplayAttribute>().FirstOrDefault() is { } attribute) {
                 result = attribute.Name;
             }
             else {
@@ -64,5 +61,3 @@ public static class DisplayNameHelper {
         return result;
     }
 }
-
-#endif
